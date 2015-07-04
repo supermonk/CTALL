@@ -1,7 +1,7 @@
 /**
  * 
  */
-package chp1;
+package tests;
 
 import static org.junit.Assert.*;
 
@@ -10,6 +10,14 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import chp1.CheckPermutation;
+import chp1.IsUnique;
+import chp1.OneWayEdit;
+import chp1.PalindromPermutations;
+import chp1.RotateMatrix;
+import chp1.StringCompression;
+import chp1.URLify;
 
 /**
  * @author narendrabidari
