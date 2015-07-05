@@ -14,6 +14,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import chp3.Queue;
+import chp3.SortStack;
 import chp3.Stack;
 
 /**
@@ -102,6 +103,19 @@ public class TestChp3 {
 		queue.push(2);
 		assertEquals(1, queue.pop().intValue());
 		assertEquals(2, queue.pop().intValue());
+		
+	}
+	
+	@Test
+	public void Sort() {
+		Stack<Integer> st = new Stack<>(Integer.class,10);
+		for(int i=0;i<10;i++){
+			st.push(i);
+		}
+		Stack<Integer> ret = SortStack.sortMe(st);
+		assertEquals(0, ret.pop().intValue());
+		assertEquals(1, ret.pop().intValue());
+		assertEquals(2, ret.pop().intValue());
 		
 	}
 
